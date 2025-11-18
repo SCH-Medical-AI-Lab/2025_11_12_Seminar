@@ -58,13 +58,13 @@ This tool:
   - Pixel values normalized to **0–255**
   - Export as **8-bit grayscale PNG**
 - Output directory automatically generated:
-  OUTPUT_ROOT/
-  └── ANAM/
-  └── [patient]/
-  └── [date]/
-  ├── patient_date_MR_001.png
-  ├── patient_date_MR_002.png
-  └── ...
+OUTPUT_ROOT/
+ └── ANAM/
+      └── [patient]/
+           └── [date]/
+                ├── patient_date_MR_001.png
+                ├── patient_date_MR_002.png
+                └── ...
 
 ---
 
@@ -84,8 +84,7 @@ This tool:
    - Divide by max  
    - Scale to 255  
 8. Converts to 8-bit grayscale PNG  
-9. Saves using format: [patient][date][modality]_[slice:03d].png
-
+9. Saves using format: `[patient]_[date]_[modality]_[slice:03d].png`
 
 ---
 
@@ -110,13 +109,13 @@ T1_AXIAL_NAMES = [
 
 ---
 
-📦 Installation
+# 📦 Installation
 Install required Python packages:
 ```bash
 pip install pydicom pillow numpy
 ```
 
-📝 Notes
+# 📝 Notes
 
 Filtering is based on exact SeriesDescription matches.
 MRI scanners with different naming conventions may require updating T1_AXIAL_NAMES.
