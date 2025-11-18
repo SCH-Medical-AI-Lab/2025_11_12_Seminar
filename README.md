@@ -58,6 +58,7 @@ This tool:
   - Pixel values normalized to **0–255**
   - Export as **8-bit grayscale PNG**
 - Output directory automatically generated:
+```
 OUTPUT_ROOT/
  └── ANAM/
       └── [patient]/
@@ -65,7 +66,7 @@ OUTPUT_ROOT/
                 ├── patient_date_MR_001.png
                 ├── patient_date_MR_002.png
                 └── ...
-
+```
 ---
 
 # 🧠 How It Works (Pipeline Summary)
